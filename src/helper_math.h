@@ -1316,7 +1316,7 @@ inline __host__ __device__ float length(float3 v)
 }
 inline __host__ __device__ double length(double3 v)
 {
-    return sqrtf(dot(v, v));
+    return sqrt(dot(v, v));
 }
 inline __host__ __device__ float length(float4 v)
 {
