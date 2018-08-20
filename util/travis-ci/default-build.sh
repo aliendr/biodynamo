@@ -35,9 +35,12 @@ export DISPLAY=:99.0
 util/xvfb-initd.sh start
 
 # git describe does not work if last commit tag is not checked out
-git fetch --unshallow &>/dev/null || true
+git fetch --unshallow || true
 git --version
-git describe --tags
+git describe --tags || true
+
+python --version
+python3 --version
 
 # add master branch
 # https://github.com/travis-ci/travis-ci/issues/6069
