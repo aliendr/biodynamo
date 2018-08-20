@@ -36,6 +36,8 @@ util/xvfb-initd.sh start
 
 # git describe does not work if last commit tag is not checked out
 git fetch --unshallow &>/dev/null || true
+git --version
+git describe --tags
 
 # add master branch
 # https://github.com/travis-ci/travis-ci/issues/6069

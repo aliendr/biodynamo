@@ -45,6 +45,10 @@ script:
 services:
   - docker
 
+python:
+  - "2.7.12"
+  - "3.5.2"
+
 notifications:
   slack: cernopenlab:2MzX9lwS6W9nU47MuY1qSmk9
 
