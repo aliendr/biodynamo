@@ -8,6 +8,9 @@ matrix:
       dist: trusty
       sudo: required
       group: edge
+      python:
+          - "2.7.12"
+          - "3.5.2"
       env: SCRIPT="util/travis-ci/default-build.sh"
     # Default build on osx
     - os: osx
@@ -44,10 +47,6 @@ script:
 
 services:
   - docker
-
-python:
-  - "2.7.12"
-  - "3.5.2"
 
 notifications:
   slack: cernopenlab:2MzX9lwS6W9nU47MuY1qSmk9
