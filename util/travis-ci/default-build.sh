@@ -35,10 +35,8 @@ export DISPLAY=:99.0
 util/xvfb-initd.sh start
 
 # git describe does not work if last commit tag is not checked out
-# git fetch --unshallow || true
-git fetch --depth=10000 || true
-git --version
-git describe --tags || true
+git fetch --unshallow || true
+git fetch --tags
 
 python --version
 python3 --version
